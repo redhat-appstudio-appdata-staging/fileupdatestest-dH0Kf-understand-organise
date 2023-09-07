@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fileupdatestest-component
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/fileupdatestest/fileupdatestest-component@sha256:7add366accf6e72d2707ab9cbaf6dfebba19d7ad38854a775766c5dfeac339da
+        name: my-python
+        resources: {}
+status: {}
